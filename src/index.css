@@ -1,0 +1,44 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom range input styles */
+input[type="range"] {
+  -webkit-appearance: none;
+  appearance: none;
+  background: transparent;
+  cursor: pointer;
+}
+
+/* Thumb styles */
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  height: 24px;
+  width: 24px;
+  background-color: #4299e1;
+  border-radius: 50%;
+  border: 2px solid #ffffff;
+  margin-top: -10px;
+}
+
+input[type="range"]::-moz-range-thumb {
+  height: 24px;
+  width: 24px;
+  background-color: #4299e1;
+  border-radius: 50%;
+  border: 2px solid #ffffff;
+}
+
+/* Track styles */
+input[type="range"]::-webkit-slider-runnable-track {
+  background-color: #e2e8f0;
+  border-radius: 0.5rem;
+  height: 0.5rem;
+}
+
+input[type="range"]::-moz-range-track {
+  background-color: #e2e8f0;
+  border-radius: 0.5rem;
+  height: 0.5rem;
+}
